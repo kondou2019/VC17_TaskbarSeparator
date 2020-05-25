@@ -1,0 +1,40 @@
+■VC17_TaskbarSeparator
+
+・矩形。
+
+・コマンドラインオプションで、タイトルを変更
+黄色の■。アイコン
+=>ブラウザ
+-color:yellow -title:タイトル
+
+色は、原色で8種類。RGBもあるかも。
+アイコンを指定するのもあり。
+
+・もしかすると、他人のプログラムのアイコンも変更できるかも。
+
+□
+・タスクバーのアイコンについて
+https://oshiete.goo.ne.jp/qa/4851916.html
+
+
+DestroyIcon()
+CreateIconIndirect()
+
+・BMP 画像の扱いかた
+http://www.geocities.co.jp/SiliconValley-SanJose/9921/bitmap.htm
+
+・Win32 API でアプリケーションを列挙する方法 
+https://support.microsoft.com/ja-jp/help/175030
+
+□outlookのアイコンを差し替える
+・hwndさえわかればできそう。outlook2010のアイコンに差し替える。
+
+■使い方
+・コマンドオプションでアイコンの色とウインドタイトルを指定する。
+
+-color:blue|green|yellow|cyan|magenta|black|white
+"-title:=>ブラウザ"
+※titleに'>'を含む場合、ダブルクォートで囲むこと。
+
+例)
+TaskbarSeparator.exe -color:yellow -title:=>ブラウザ
